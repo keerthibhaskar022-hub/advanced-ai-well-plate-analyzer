@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Copy of AI Well Plate Analyzer (adv)1.",
+  "description": "An application to analyze 96-well culture plate images. Users can upload an image, calibrate the well grid, and get estimated cell counts based on color intensity.",
+  "requestFramePermissions": []
+}

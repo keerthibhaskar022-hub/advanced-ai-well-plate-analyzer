@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Well Plate Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --color-background-primary: #F9FAFB; /* gray-50 */
+        --color-background-secondary: #FFFFFF; /* white */
+        --color-background-tertiary: #F3F4F6; /* gray-100 */
+        --color-background-tertiary-hover: #E5E7EB; /* gray-200 */
+        --color-background-accent: #EFF6FF; /* blue-50 */
+        
+        --color-text-primary: #111827; /* gray-900 */
+        --color-text-secondary: #374151; /* gray-700 */
+        --color-text-muted: #6B7280; /* gray-500 */
+        
+        --color-border-primary: #D1D5DB; /* gray-300 */
+        --color-border-primary-hover: #9CA3AF; /* gray-400 */
+        --color-border-secondary: #E5E7EB; /* gray-200 */
+
+        --color-accent-primary: #2563EB; /* blue-600 */
+        --color-accent-primary-hover: #1D4ED8; /* blue-700 */
+        --color-accent-primary-text: #FFFFFF;
+        --color-accent-secondary: #3B82F6; /* blue-500 */
+
+        --color-button-secondary-bg: #E5E7EB; /* gray-200 */
+        --color-button-secondary-hover-bg: #D1D5DB; /* gray-300 */
+        --color-button-secondary-text: #1F2937; /* gray-800 */
+
+        --color-input-background: #FFFFFF;
+        --color-input-border: #D1D5DB; /* gray-300 */
+
+        --color-point-border: #1F2937; /* gray-800 */
+        --color-crosshair: rgba(17, 24, 39, 0.5); /* gray-900/50 */
+
+        --color-table-header-bg: #F9FAFB; /* gray-50 */
+        --color-table-header-text: #374151; /* gray-700 */
+        --color-table-row-hover-bg: #F9FAFB; /* gray-50 */
+      }
+
+      .dark {
+        --color-background-primary: #111827; /* gray-900 */
+        --color-background-secondary: #1F2937; /* gray-800 */
+        --color-background-tertiary: #374151; /* gray-700 */
+        --color-background-tertiary-hover: #4B5563; /* gray-600 */
+        --color-background-accent: #1F2937; /* gray-800 */
+
+        --color-text-primary: #F9FAFB; /* gray-100 */
+        --color-text-secondary: #E5E7EB; /* gray-200 */
+        --color-text-muted: #9CA3AF; /* gray-400 */
+
+        --color-border-primary: #4B5563; /* gray-600 */
+        --color-border-primary-hover: #6B7280; /* gray-500 */
+        --color-border-secondary: #374151; /* gray-700 */
+
+        --color-accent-primary: #60A5FA; /* blue-400 */
+        --color-accent-primary-hover: #3B82F6; /* blue-500 */
+        --color-accent-primary-text: #FFFFFF;
+        --color-accent-secondary: #60A5FA; /* blue-400 */
+
+        --color-button-secondary-bg: #4B5563; /* gray-600 */
+        --color-button-secondary-hover-bg: #6B7280; /* gray-500 */
+        --color-button-secondary-text: #E5E7EB; /* gray-200 */
+
+        --color-input-background: #374151; /* gray-700 */
+        --color-input-border: #6B7280; /* gray-500 */
+
+        --color-point-border: #FFFFFF; /* white */
+        --color-crosshair: rgba(255, 255, 255, 0.5); /* white/50 */
+
+        --color-table-header-bg: #374151; /* gray-700 */
+        --color-table-header-text: #D1D5DB; /* gray-300 */
+        --color-table-row-hover-bg: #4B5563; /* gray-600 */
+      }
+      body {
+        background-color: var(--color-background-primary);
+        color: var(--color-text-primary);
+        transition: background-color 0.3s, color 0.3s;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
